@@ -7,8 +7,6 @@
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/java/com/hms/GatewayMS/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/java/com/hms/GatewayMS/filter/TokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/config/CorsConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

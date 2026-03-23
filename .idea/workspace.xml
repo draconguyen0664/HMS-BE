@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/exception/HmsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/utility/ErrorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/utility/ExceptionControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/dto/PatientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.ProfileMsApplication.executor": "Run",
-    "Application.UserHmsApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Documents/Dev/HMS/HMS-BE/ProfileMS/src/main/java/com/hms/ProfileMS/utility"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProfileMsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserHmsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/Dev/HMS/HMS-BE/ProfileMS/src/main/java/com/hms/ProfileMS/utility&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\ProfileMS\src\main\java\com\hms\ProfileMS\utility" />

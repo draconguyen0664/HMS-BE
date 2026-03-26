@@ -28,13 +28,24 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-        RequestMatcher secretKeyMatcher = request ->
-                "SECRET".equals(request.getHeader("X-Secret-Key"));
+        RequestMatcher doctorAddWithSecretMatcher = request ->
+                "/profile/doctor/add".equals(request.getRequestURI())
+                        && "POST".equalsIgnoreCase(request.getMethod())
+                        && "SECRET".equals(request.getHeader("X-Secret-Key"));
+
+        RequestMatcher patientAddWithSecretMatcher = request ->
+                "/profile/patient/add".equals(request.getRequestURI())
+                        && "POST".equalsIgnoreCase(request.getMethod())
+                        && "SECRET".equals(request.getHeader("X-Secret-Key"));
 
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(secretKeyMatcher).permitAll()
+                        .requestMatchers(patientAddWithSecretMatcher).permitAll()
+                        .requestMatchers("/profile/patient/get/**").permitAll()
+                        .requestMatchers("/profile/patient/update").permitAll()
+                        .requestMatchers("/profile/doctor/get/**").permitAll()
+                        .requestMatchers("/profile/doctor/update").permitAll()
                         .anyRequest().denyAll()
                 );
 

@@ -6,12 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/dto/PatientDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/entity/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/PatientAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/PatientAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/jwt/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/jwt/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/jwt/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/jwt/MyUserDetailsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

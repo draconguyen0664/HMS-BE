@@ -1,6 +1,7 @@
 package com.hms.Appointment.api;
 
 import com.hms.Appointment.dto.AppointmentDTO;
+import com.hms.Appointment.dto.AppointmentDetails;
 import com.hms.Appointment.exception.HmsException;
 import com.hms.Appointment.service.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class AppointmentAPI {
     private AppointmentService appointmentService;
 
     @PostMapping("/schedule")
-    public ResponseEntity<Long> scheduleAppointment(@RequestBody AppointmentDTO appointmentDTO) {
+    public ResponseEntity<Long> scheduleAppointment(@RequestBody AppointmentDTO appointmentDTO) throws HmsException {
         return new ResponseEntity<>(appointmentService.scheduleAppointment(appointmentDTO), HttpStatus.CREATED);
     }
 
@@ -32,6 +33,12 @@ public class AppointmentAPI {
     @GetMapping("/get/{appointmentId}")
     public ResponseEntity<AppointmentDTO> getAppointmentDetails(@PathVariable Long appointmentId) throws HmsException {
         return new ResponseEntity<>(appointmentService.getAppointmentDetails(appointmentId), HttpStatus.OK);
+    }
+
+    @GetMapping("/get/details/{appointmentId}")
+    public ResponseEntity<AppointmentDetails> getAppointmentDetailsWithName(@PathVariable Long appointmentId)
+            throws HmsException {
+        return new ResponseEntity<>(appointmentService.getAppointmentDetailsWithName(appointmentId), HttpStatus.OK);
     }
 
 }

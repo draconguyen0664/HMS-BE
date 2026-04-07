@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/exception/HmsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/utility/ErrorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/utility/ExceptionControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/dto/BloodGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/dto/DoctorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/dto/PatientDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/api/AppointmentAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/api/AppointmentAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/PatientAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/PatientAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/PatientServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +59,12 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Documents/Dev/HMS/HMS-BE/Appointment/src/main/java/com/hms/Appointment/utility"
+    "last_opened_file_path": "C:/Users/Admin/Documents/Dev/HMS/HMS-BE/Appointment/src/main/java/com/hms/Appointment/dto"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\Appointment\src\main\java\com\hms\Appointment\dto" />
       <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\Appointment\src\main\java\com\hms\Appointment\utility" />
       <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\ProfileMS\src\main\java\com\hms\ProfileMS\utility" />
     </key>
@@ -64,6 +72,7 @@
       <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\Appointment\src\main\java\com\hms\appointment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hms.Appointment.config" />
       <recent name="com.hms.ProfileMS.entity" />
       <recent name="com.hms.ProfileMS.config" />
       <recent name="com.hms.ProfileMS.exception" />

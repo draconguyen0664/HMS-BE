@@ -1,5 +1,6 @@
 package com.hms.Appointment.service;
 
+import com.hms.Appointment.client.ProfileClient;
 import com.hms.Appointment.dto.*;
 import com.hms.Appointment.entity.Appointment;
 import com.hms.Appointment.exception.HmsException;
@@ -16,14 +17,17 @@ public class AppointmentServiceImpl implements AppointmentService {
     @Autowired
     private ApiService apiService;
 
+    @Autowired
+    private ProfileClient profileClient;
+
     @Override
     public Long scheduleAppointment(AppointmentDTO appointmentDTO) throws HmsException {
-        Boolean doctorExists = apiService.doctorExists(appointmentDTO.getDoctorId()).block();
+        Boolean doctorExists = profileClient.doctorExists(appointmentDTO.getDoctorId());
         if (doctorExists == null || !doctorExists) {
             throw new HmsException("DOCTOR_NOT_FOUND");
         }
 
-        Boolean patientExists = apiService.patientExists(appointmentDTO.getPatientId()).block();
+        Boolean patientExists = profileClient.patientExists(appointmentDTO.getPatientId());
         if (patientExists == null || !patientExists) {
             throw new HmsException("PATIENT_NOT_FOUND");
         }
@@ -69,8 +73,8 @@ public class AppointmentServiceImpl implements AppointmentService {
                 .orElseThrow(() -> new HmsException("APPOINTMENT_NOT_FOUND"))
                 .toDTO();
 
-        DoctorDTO doctorDTO = apiService.getDoctorById(appointmentDTO.getDoctorId()).block();
-        PatientDTO patientDTO = apiService.getPatientById(appointmentDTO.getPatientId()).block();
+        DoctorDTO doctorDTO = profileClient.getDoctorById(appointmentDTO.getDoctorId());
+        PatientDTO patientDTO = profileClient.getPatientById(appointmentDTO.getPatientId());
 
         return new AppointmentDetails(
                 appointmentDTO.getId(),

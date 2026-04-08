@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Appointment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/AppointmentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/AppointmentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserHMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/UserHmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/UserHmsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +66,11 @@
       <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\Appointment\src\main\java\com\hms\appointment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hms.user.UserHMS.config" />
+      <recent name="com.hms.user.UserHMS.client" />
       <recent name="com.hms.Appointment.config" />
       <recent name="com.hms.ProfileMS.entity" />
       <recent name="com.hms.ProfileMS.config" />
-      <recent name="com.hms.ProfileMS.exception" />
     </key>
   </component>
   <component name="RunManager" selected="Application.UserHmsApplication">

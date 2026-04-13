@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appointment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/AppointmentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/AppointmentApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/UserHmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/UserHmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserHMS/src/main/java/com/hms/user/UserHMS/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/java/com/hms/GatewayMS/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/java/com/hms/GatewayMS/filter/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/repository/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.AppointmentApplication.executor": "Run",
-    "Application.EurekaServerApplication.executor": "Run",
-    "Application.ProfileMsApplication.executor": "Run",
-    "Application.UserHmsApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Documents/Dev/HMS/HMS-BE/Appointment/src/main/java/com/hms/Appointment/dto"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AppointmentApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProfileMsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserHmsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/Dev/HMS/HMS-BE&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\Dev\HMS\HMS-BE\Appointment\src\main\java\com\hms\Appointment\dto" />
@@ -142,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserHmsApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.AppointmentApplication" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.ProfileMsApplication" />
-        <item itemvalue="Application.AppointmentApplication" />
-        <item itemvalue="Application.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>

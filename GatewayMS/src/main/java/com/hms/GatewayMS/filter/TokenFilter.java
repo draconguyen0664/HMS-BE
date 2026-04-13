@@ -1,4 +1,3 @@
-
 package com.hms.GatewayMS.filter;
 
 import io.jsonwebtoken.Claims;
@@ -29,9 +28,7 @@ public class TokenFilter extends AbstractGatewayFilterFactory<TokenFilter.Config
             String path = exchange.getRequest().getPath().toString();
             HttpMethod method = exchange.getRequest().getMethod();
 
-            if (HttpMethod.OPTIONS.equals(method)
-                    || path.equals("/user/login")
-                    || path.equals("/user/register")) {
+            if (isPublicPath(path, method)) {
                 exchange = exchange.mutate()
                         .request(r -> r.header("X-Secret-Key", "SECRET"))
                         .build();
@@ -74,6 +71,13 @@ public class TokenFilter extends AbstractGatewayFilterFactory<TokenFilter.Config
 
             return chain.filter(exchange);
         };
+    }
+
+    private boolean isPublicPath(String path, HttpMethod method) {
+        return HttpMethod.OPTIONS.equals(method)
+                || path.equals("/user/login")
+                || path.equals("/user/register")
+                || path.equals("/profile/doctor/dropdowns");
     }
 
     public static class Config {

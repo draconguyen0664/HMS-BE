@@ -41,15 +41,16 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(doctorAddWithSecretMatcher).permitAll()
                         .requestMatchers(patientAddWithSecretMatcher).permitAll()
                         .requestMatchers("/profile/patient/get/**").permitAll()
                         .requestMatchers("/profile/patient/update").permitAll()
                         .requestMatchers("/profile/doctor/get/**").permitAll()
                         .requestMatchers("/profile/doctor/update").permitAll()
+                        .requestMatchers("/profile/doctor/dropdowns").permitAll()
                         .anyRequest().denyAll()
                 );
 
         return http.build();
     }
-
 }

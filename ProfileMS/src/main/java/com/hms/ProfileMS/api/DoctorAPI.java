@@ -1,6 +1,7 @@
 package com.hms.ProfileMS.api;
 
 import com.hms.ProfileMS.dto.DoctorDTO;
+import com.hms.ProfileMS.dto.DoctorDropdown;
 import com.hms.ProfileMS.exception.HmsException;
 import com.hms.ProfileMS.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin
@@ -38,4 +41,10 @@ public class DoctorAPI {
         return new ResponseEntity<>(doctorService.doctorExists(id), HttpStatus.OK);
     }
 
+    @GetMapping("/dropdowns")
+    public ResponseEntity<List<DoctorDropdown>> getDoctorDropdowns() throws HmsException {
+        return new ResponseEntity<>(
+                doctorService.getDoctorDropdowns(), HttpStatus.OK
+        );
+    }
 }

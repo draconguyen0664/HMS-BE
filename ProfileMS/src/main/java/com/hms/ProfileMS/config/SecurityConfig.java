@@ -43,11 +43,16 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(doctorAddWithSecretMatcher).permitAll()
                         .requestMatchers(patientAddWithSecretMatcher).permitAll()
+
                         .requestMatchers("/profile/patient/get/**").permitAll()
                         .requestMatchers("/profile/patient/update").permitAll()
+                        .requestMatchers("/profile/patient/exists/**").permitAll()
+
                         .requestMatchers("/profile/doctor/get/**").permitAll()
                         .requestMatchers("/profile/doctor/update").permitAll()
+                        .requestMatchers("/profile/doctor/exists/**").permitAll()
                         .requestMatchers("/profile/doctor/dropdowns").permitAll()
+
                         .anyRequest().denyAll()
                 );
 

@@ -28,29 +28,36 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-        RequestMatcher doctorAddWithSecretMatcher = request ->
-                "/profile/doctor/add".equals(request.getRequestURI())
+        RequestMatcher scheduleWithSecretMatcher = request ->
+                "/appointment/schedule".equals(request.getRequestURI())
                         && "POST".equalsIgnoreCase(request.getMethod())
                         && "SECRET".equals(request.getHeader("X-Secret-Key"));
 
-        RequestMatcher patientAddWithSecretMatcher = request ->
-                "/profile/patient/add".equals(request.getRequestURI())
-                        && "POST".equalsIgnoreCase(request.getMethod())
+        RequestMatcher cancelWithSecretMatcher = request ->
+                request.getRequestURI().startsWith("/appointment/cancel/")
+                        && "PUT".equalsIgnoreCase(request.getMethod())
+                        && "SECRET".equals(request.getHeader("X-Secret-Key"));
+
+        RequestMatcher getWithSecretMatcher = request ->
+                request.getRequestURI().startsWith("/appointment/get/")
+                        && "GET".equalsIgnoreCase(request.getMethod())
+                        && "SECRET".equals(request.getHeader("X-Secret-Key"));
+
+        RequestMatcher getDetailsWithSecretMatcher = request ->
+                request.getRequestURI().startsWith("/appointment/get/details/")
+                        && "GET".equalsIgnoreCase(request.getMethod())
                         && "SECRET".equals(request.getHeader("X-Secret-Key"));
 
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(patientAddWithSecretMatcher).permitAll()
-                        .requestMatchers("/profile/patient/get/**").permitAll()
-                        .requestMatchers("/profile/patient/update").permitAll()
-                        .requestMatchers("/profile/doctor/get/**").permitAll()
-                        .requestMatchers("/profile/doctor/update").permitAll()
+                        .requestMatchers(scheduleWithSecretMatcher).permitAll()
+                        .requestMatchers(cancelWithSecretMatcher).permitAll()
+                        .requestMatchers(getWithSecretMatcher).permitAll()
+                        .requestMatchers(getDetailsWithSecretMatcher).permitAll()
                         .anyRequest().denyAll()
                 );
 
         return http.build();
     }
-
 }
-

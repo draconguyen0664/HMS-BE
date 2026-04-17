@@ -77,7 +77,11 @@ public class TokenFilter extends AbstractGatewayFilterFactory<TokenFilter.Config
         return HttpMethod.OPTIONS.equals(method)
                 || path.equals("/user/login")
                 || path.equals("/user/register")
-                || path.equals("/profile/doctor/dropdowns");
+                || path.equals("/profile/doctor/dropdowns")
+                || path.equals("/appointment/schedule")
+                || path.startsWith("/appointment/get/")
+                || path.startsWith("/appointment/get/details/")
+                || path.startsWith("/appointment/cancel/");
     }
 
     public static class Config {

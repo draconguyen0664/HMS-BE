@@ -1,7 +1,11 @@
 package com.hms.Appointment.service;
 
 import com.hms.Appointment.client.ProfileClient;
-import com.hms.Appointment.dto.*;
+import com.hms.Appointment.dto.AppointmentDTO;
+import com.hms.Appointment.dto.AppointmentDetails;
+import com.hms.Appointment.dto.DoctorDTO;
+import com.hms.Appointment.dto.PatientDTO;
+import com.hms.Appointment.dto.Status;
 import com.hms.Appointment.entity.Appointment;
 import com.hms.Appointment.exception.HmsException;
 import com.hms.Appointment.repository.AppointmentRepository;
@@ -15,25 +19,32 @@ public class AppointmentServiceImpl implements AppointmentService {
     private AppointmentRepository appointmentRepository;
 
     @Autowired
-    private ApiService apiService;
-
-    @Autowired
     private ProfileClient profileClient;
 
     @Override
     public Long scheduleAppointment(AppointmentDTO appointmentDTO) throws HmsException {
-        Boolean doctorExists = profileClient.doctorExists(appointmentDTO.getDoctorId());
-        if (doctorExists == null || !doctorExists) {
-            throw new HmsException("DOCTOR_NOT_FOUND");
-        }
+        try {
+            Boolean doctorExists = profileClient.doctorExists(appointmentDTO.getDoctorId());
+            if (doctorExists == null || !doctorExists) {
+                throw new HmsException("DOCTOR_NOT_FOUND");
+            }
 
-        Boolean patientExists = profileClient.patientExists(appointmentDTO.getPatientId());
-        if (patientExists == null || !patientExists) {
-            throw new HmsException("PATIENT_NOT_FOUND");
-        }
+            Boolean patientExists = profileClient.patientExists(appointmentDTO.getPatientId());
+            if (patientExists == null || !patientExists) {
+                throw new HmsException("PATIENT_NOT_FOUND");
+            }
 
-        appointmentDTO.setStatus(Status.SCHEDULED);
-        return appointmentRepository.save(appointmentDTO.toEntity()).getId();
+            appointmentDTO.setStatus(Status.SCHEDULED);
+
+            Appointment savedAppointment = appointmentRepository.save(appointmentDTO.toEntity());
+            return savedAppointment.getId();
+
+        } catch (HmsException e) {
+            throw e;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new HmsException("SOME_ERROR_OCCURRED");
+        }
     }
 
     @Override
@@ -51,12 +62,10 @@ public class AppointmentServiceImpl implements AppointmentService {
 
     @Override
     public void completeAppointment(Long appointmentId) {
-
     }
 
     @Override
     public void rescheduleAppointment(Long appointmentId, String newDateTime) {
-
     }
 
     @Override
@@ -65,7 +74,6 @@ public class AppointmentServiceImpl implements AppointmentService {
                 .orElseThrow(() -> new HmsException("APPOINTMENT_NOT_FOUND"))
                 .toDTO();
     }
-
 
     @Override
     public AppointmentDetails getAppointmentDetailsWithName(Long appointmentId) throws HmsException {

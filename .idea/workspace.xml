@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="69f29e16-47ef-470b-970a-3cb5a08e93f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/client/ProfileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/client/ProfileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/config/FeignClientInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/config/FeignClientInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/dto/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/dto/AppointmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/java/com/hms/Appointment/service/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appointment/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Appointment/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/java/com/hms/GatewayMS/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/java/com/hms/GatewayMS/filter/TokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayMS/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/api/DoctorAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/repository/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileMS/src/main/java/com/hms/ProfileMS/service/DoctorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <recent name="com.hms.ProfileMS.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserHmsApplication">
+  <component name="RunManager" selected="Application.AppointmentApplication">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hms.GatewayMS.Application" />
       <module name="GatewayMS" />
@@ -142,9 +145,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppointmentApplication" />
         <item itemvalue="Application.UserHmsApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
-        <item itemvalue="Application.AppointmentApplication" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.ProfileMsApplication" />
       </list>

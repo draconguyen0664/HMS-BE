@@ -3,6 +3,8 @@ package com.hms.Appointment.entity;
 import com.hms.Appointment.dto.AppointmentDTO;
 import com.hms.Appointment.dto.Status;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -17,17 +19,30 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 public class Appointment {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private Long patientId;
     private Long doctorId;
     private LocalDateTime appointmentTime;
+
+    @Enumerated(EnumType.STRING)
     private Status status;
+
     private String reason;
     private String notes;
 
     public AppointmentDTO toDTO() {
-        return new AppointmentDTO(id, patientId, doctorId, appointmentTime, status, reason, notes);
+        return new AppointmentDTO(
+                id,
+                patientId,
+                doctorId,
+                appointmentTime,
+                status,
+                reason,
+                notes
+        );
     }
 }

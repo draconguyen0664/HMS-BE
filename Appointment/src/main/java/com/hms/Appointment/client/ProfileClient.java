@@ -7,8 +7,13 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "ProfileMS", configuration = FeignClientInterceptor.class)
+@FeignClient(
+        name = "ProfileMS",
+        url = "${profilems.url}",
+        configuration = FeignClientInterceptor.class
+)
 public interface ProfileClient {
+
     @GetMapping("/profile/doctor/exists/{id}")
     Boolean doctorExists(@PathVariable("id") Long id);
 
